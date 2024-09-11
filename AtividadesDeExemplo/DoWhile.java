@@ -7,7 +7,7 @@ public class DoWhile {
         JOptionPane.showMessageDialog(null, "Acerte o cálculo",
             "Faça Enquanto > Do While", JOptionPane.INFORMATION_MESSAGE);
     
-        do {
+        do { 
             resposta = Double.parseDouble(JOptionPane.showInputDialog("Quanto é 5 / 2"));
         } while (resposta != 2.5);
 
