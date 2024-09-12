@@ -2,6 +2,7 @@ import javax.swing.JOptionPane;
 
 public class Array {
     public static void main(String[] args) {
+   
         int valores [] = new int [2];
         Double media = 0.0;
 
@@ -15,10 +16,11 @@ public class Array {
         }
 
         media += valores[i];
-    }
+    
 
     media = meda / valores.length; //Esta função retorna o tamanho do array
         
     JOptionPane.showMessageDialog(null, "A média é:" + media,
-        "Vetor > Array", JOptionPane.INFORMATION_MESSAGE);
+        "Vetor > Array", JOptionPane.INFORMATION_MESSAGE);  
+    }
 }
