@@ -15,7 +15,7 @@ public class Array {
             media += valores[i];
         }
 
-        media += valores[i];
+        media = media / valores.length;
     
 
     media = media / valores.length; //Esta função retorna o tamanho do array
