@@ -20,7 +20,7 @@ public class Array {
 
     media = media / valores.length; //Esta função retorna o tamanho do array
         
-    JOptionPane.showMessageDialog(null, "A média é:" + media,
+    JOptionPane.showMessageDialog(null, "A média é: " + media,
         "Vetor > Array", JOptionPane.INFORMATION_MESSAGE);  
     }
 }
