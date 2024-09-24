@@ -1,9 +1,7 @@
 import javax.swing.JOptionPane;
 
-//package Desafio01;
-
-public class Desafio01 {
-    public static void main(String[] args) {
+public class Desafio01 { //função programa
+    public static void main(String[] args) { //função inicio
         int numero;
 
         numero = Integer.parseInt(JOptionPane.showInputDialog("Informe um número: "));
