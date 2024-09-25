@@ -1,6 +1,5 @@
 import javax.swing.JOptionPane;
 
-
 public class Desafio01 {
     public static void main(String[] args) {
        
@@ -15,7 +14,7 @@ public class Desafio01 {
 
         if (idade <= 18) { 
             JOptionPane.showMessageDialog(null, "Criança");
-        } else if (idade >= 18 && idade <= 30) {
+        } else if (idade >= 19 && idade <= 29) {
             JOptionPane.showMessageDialog(null, "Jovem");
         } if (idade  >= 30 && idade <= 59) {
             JOptionPane.showMessageDialog(null, "Adulto"); 
