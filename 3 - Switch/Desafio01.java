@@ -6,42 +6,35 @@ public class Desafio01 {
 
         switch(option){
             case 1:
-            int raio = Integer.parseInt(JOptionPane.showInputDialog("Informe o raio do círculo"));
+                int raio = Integer.parseInt(JOptionPane.showInputDialog("Informe o raio do círculo"));
 
-            int resultado = 3 * (raio * raio);
+                int resultado = 3 * (raio * raio);
 
-            JOptionPane.showMessageDialog(null, "Área: "+resultado);
-            break;
+                JOptionPane.showMessageDialog(null, "Área: "+resultado);
+                break;
             
             case 2:
-            int lado = Integer.parseInt(JOptionPane.showInputDialog("Informe o lado do quadrado"));
+                int lado = Integer.parseInt(JOptionPane.showInputDialog("Informe o lado do quadrado"));
 
-            int resultado1 =  lado * lado;
+                int resultado1 =  lado * lado;
 
-            JOptionPane.showMessageDialog(null, "Área: "+resultado1);
+                JOptionPane.showMessageDialog(null, "Área: "+resultado1);
 
-            break;
+                break;
 
-            case 3:
-            int lado1[] = new int [2];
-            
-            for (int i=0;i<2;i++){
-                lado1[i] = Integer.parseInt(JOptionPane.showInputDialog("Informe o lado do retângulo"));
-                
-                int resultado2 = lado1[0] * lado1[1];
-                JOptionPane.showMessageDialog(null, "Área: "+ resultado2);
-            }
-            break;
+            case 3: // Retângulo
+                int comprimento = Integer.parseInt(JOptionPane.showInputDialog("Informe o comprimento do retângulo"));
+                int largura = Integer.parseInt(JOptionPane.showInputDialog("Informe a largura do retângulo"));
+                int areaRetangulo = comprimento * largura;
+                JOptionPane.showMessageDialog(null, "Área do retângulo: " + areaRetangulo);
+                break;
 
             case 4:
-            int cateto[] = new int [2];
-            for (int i = 0; i < 2; i++){
-                cateto[i] = Integer.parseInt(JOptionPane.showInputDialog(null,  "Digite o " + (i+1) + "° cateto: "));
+                int base = Integer.parseInt(JOptionPane.showInputDialog("Informe a base do triângulo"));
+                int altura = Integer.parseInt(JOptionPane.showInputDialog("Informe a altura do triângulo"));
 
-                int resultado3 = (cateto[0]  * cateto[1]) / 2;
+                int resultado3 = (base * altura) / 2;
                 JOptionPane.showMessageDialog(null, "Área: "+ resultado3);
-            }
-            
 
         }
     }
