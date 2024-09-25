@@ -3,10 +3,15 @@ import javax.swing.JOptionPane;
 
 public class Desafio01 {
     public static void main(String[] args) {
+       
+        int idade = Integer.parseInt(JOptionPane.showInputDialog("Informe sua idade:"));
 
-        String string = JOptionPane.showInputDialog("Informe sua idade: "); //mudar para while
-                
-        int idade =  Integer.parseInt(string);
+        while (idade < 0) {
+
+            JOptionPane.showMessageDialog(null, "Valor inválido");
+
+            idade = Integer.parseInt(JOptionPane.showInputDialog("Informe sua idade:"));
+        }
 
         if (idade <= 18) { 
             JOptionPane.showMessageDialog(null, "Criança");
