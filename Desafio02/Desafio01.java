@@ -1,15 +1,14 @@
-
 import javax.swing.JOptionPane;
 
 
 public class Desafio01 {
     public static void main(String[] args) {
 
-        String string = JOptionPane.showInputDialog("Informe sua idade: ");
+        String string = JOptionPane.showInputDialog("Informe sua idade: "); //mudar para while
                 
         int idade =  Integer.parseInt(string);
 
-        if (idade <= 18) {
+        if (idade <= 18) { 
             JOptionPane.showMessageDialog(null, "Criança");
         } else if (idade >= 18 && idade <= 30) {
             JOptionPane.showMessageDialog(null, "Jovem");
