@@ -36,6 +36,8 @@ public class Desafio01 {
                 int resultado3 = (base * altura) / 2;
                 JOptionPane.showMessageDialog(null, "Área: "+ resultado3);
 
+            default:
+            JOptionPane.showMessageDialog(null, "Opção inválida!");
         }
     }
 }
