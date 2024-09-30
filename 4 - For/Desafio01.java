@@ -13,7 +13,6 @@ public class Desafio01 {
             numero[i] = Integer.parseInt(JOptionPane.showInputDialog("Informe o "+(i+1)+"° número: "));
         }
 
-        for(int i=0;i<1;i++){
             int resultado = numero[0] * numero[1];
             
             pergunta = Integer.parseInt(JOptionPane.showInputDialog("Informe a multiplicação dos 2 valores: "));
@@ -27,6 +26,6 @@ public class Desafio01 {
             JOptionPane.showMessageDialog(null, "Parabéns, você acertou!");
             
             JOptionPane.showMessageDialog(null, "Quantidade de tentativas: "+quantidade);
-            }
+            
     }
 }
