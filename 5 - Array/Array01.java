@@ -1,6 +1,5 @@
-
+import java.util.*;
 import javax.swing.JOptionPane;
-
 
 public class Array01 {
     public static void main(String[] args) {
@@ -9,8 +8,7 @@ public class Array01 {
         int numero[] = new int[10];
         int total = 0;
 
-        int maior = 0;
-        int menor = 0;
+        int segundoMaior, terceiroMenor;
         
         JOptionPane.showMessageDialog(null, "Informe 10 números inteiros para calcularmos a média.");
 
@@ -18,7 +16,24 @@ public class Array01 {
             numero[i] = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o "+(i+1)+"° número: "));
             
             total += numero[i];
-            if (menor == 0) {
+                   
+        }
+
+        Arrays.sort(numero);
+
+        segundoMaior = numero[8];
+        terceiroMenor = numero[2];
+        
+        media = (double) total / 10;
+
+        JOptionPane.showMessageDialog(null, "Média: "+media);
+        JOptionPane.showMessageDialog(null, "Segundo maior número: "+segundoMaior);
+        JOptionPane.showMessageDialog(null, "Terceiro menor número: "+terceiroMenor);
+    }
+}
+
+/*
+ * if (menor == 0) {
                 menor = numero[i];
             }
 
@@ -29,12 +44,6 @@ public class Array01 {
                 maior = numero[i];
 
             }
-        }
-
-        media = (double) total / 10;
-
-        JOptionPane.showMessageDialog(null, "Média: "+media);
-        JOptionPane.showMessageDialog(null, "Menor número: "+menor);
-        JOptionPane.showMessageDialog(null, "Maior número: "+maior);
-    }
-}
+ * 
+ * 
+ */
