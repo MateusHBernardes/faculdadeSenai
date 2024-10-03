@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 
 public class Methods01 {
 
-    public void verificacao(Double nota) {
+    public static void verificacao(Double nota) {
         
         if(nota >= 7.0){
             JOptionPane.showMessageDialog(null, "Aprovado");
@@ -15,11 +15,9 @@ public class Methods01 {
 
     public static void main(String[] args) {
         
-        Methods01 metodo = new Methods01();
-
         Double nota = Double.parseDouble(JOptionPane.showInputDialog("Informe uma nota: "));
 
-        metodo.verificacao(nota);
+        verificacao(nota);
     
     }
 }
